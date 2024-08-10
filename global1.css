@@ -1,0 +1,81 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+ }
+
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+     
+  .dash {
+    background-color: rgb(222, 220, 220);
+    height: 1.5px;
+    width: 100vw;
+  }
+  
+  .keyline {
+    display: grid;
+    /* 1 rem = 16px regarding size */
+    gap: 1.5rem;
+    grid-template-columns: 1fr auto 1fr;
+    width: 100vw;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px; 
+    color: #fff; 
+    font-weight: bold;
+    padding: 10px 20px; 
+    font-size: 95px; 
+    text-align: left;
+  }
+  
+  .Header{
+    background-color: rgb(77, 52, 125); 
+    position: relative;
+    /*display: inline-block;*/
+  }
+  .Header img {
+    width: 100vw;
+    height: 500px;
+  }
+
+
+#playerCards {
+    padding: 1rem;
+    margin: 0 auto;
+    border-right: 1px solid white;
+    color: #552583; /* Lakers' purple color */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.player-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.player-name {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+.player-position, .player-rebounds {
+    margin-top: 5px;
+}
+
+
+
+
